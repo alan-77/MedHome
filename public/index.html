@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 40px 80px;
+    }
+
+    .header img {
+      width: 74px;
+      height: 77px;
+    }
+
+    .logo-text {
+      font-size: 33px;
+      font-weight: 800;
+      color: #000;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: 800;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
+    .card-button {
+      width: 450px;
+      height: 100px;
+      background-color: #0016ff;
+      border-radius: 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .card-button:hover {
+      transform: translateY(-3px);
+      opacity: 0.95;
+    }
+
+    .button-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .button-left img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .button-text {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .arrow {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .card-button {
+        width: 90%;
+      }
+
+      .header {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="logo-medhome.png" alt="Logo MedHome">
+    <h1 class="logo-text">MedHome</h1>
+  </header>
+
+  <main class="container">
+
+    <h2 class="title">
+      Selecione o tipo de cadastro:
+    </h2>
+
+    <div class="card-button">
+      <div class="button-left">
+        <img src="paciente.png" alt="Paciente">
+        <span class="button-text">Paciente</span>
+      </div>
+
+      <span class="arrow">→</span>
+    </div>
+
+    <div class="card-button">
+      <div class="button-left">
+        <img src="profissional.png" alt="Profissional">
+        <span class="button-text">Profissional</span>
+      </div>
+
+      <span class="arrow">→</span>
+    </div>
+
+  </main>
+
+</body>
+</html>
